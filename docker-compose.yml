@@ -1,0 +1,10 @@
+services:
+  apache:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: httpd:2.4
+    container_name: proxy
+    ports:
+    - '8080:80'
+    pull_policy: build
