@@ -439,6 +439,19 @@ svg {
 .projects{
   background-color: var(--container-color);
 }
+.projects__description {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.projects__description a {
+  display: block;
+  color: white;
+  text-decoration: none; 
+}
+
+.projects__description a:visited {
+  color: white; 
+}
 
 .projects__container {
   row-gap: 2rem;

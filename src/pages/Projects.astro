@@ -13,11 +13,13 @@ import { projects } from './ProjectList.ts';
          {projects.map(project => (
            <Article
              title={project.title}
+             modal={project.modal}
              description={project.description}
              imgUrl={project.imgUrl}
              alt={project.alt}
              stacks={project.stacks}
              link={project.link}
+             github={project.github}
            />
          ))}
        </div>
