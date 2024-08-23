@@ -1,0 +1,26 @@
+---
+import Article from './Article';
+import { projects } from './ProjectList.ts';
+---
+<section class="projects section" id="projects">
+    <h3 class="section__subtitle">
+       Mes <span>Projets</span>
+    </h3>
+
+    <h2 class="section__title">Mes projets récents</h2>
+
+    <div class="projects__container container grid">
+         {projects.map(project => (
+           <Article
+             title={project.title}
+             description={project.description}
+             imgUrl={project.imgUrl}
+             alt={project.alt}
+             stacks={project.stacks}
+             link={project.link}
+           />
+         ))}
+       </div>
+
+    </div>
+ </section>

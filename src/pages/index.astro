@@ -1,0 +1,57 @@
+---
+import Header from '../pages/Header.astro';
+import Home from '../pages/Home.astro';
+import About from '../pages/About.astro';
+import Skills from '../pages/Skills.astro';
+import Service from '../pages/Services.astro';
+import Projects from '../pages/Projects.astro';
+import Contact from '../pages/Contact.astro';
+import Footer from '../pages/Footer.astro';
+
+
+---
+
+<html lang="fr">
+	<head>
+	   <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <meta property="og:image" content="/assets/img/alexandre-merlin.webp">
+	   <!--=============== FAVICON ===============-->
+	   <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+ 
+	   <!--=============== REMIXICONS ===============-->
+	   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+ 
+	   <!--=============== CSS ===============-->
+	   <link rel="stylesheet" href="/assets/css/styles.css">
+ 
+	   <title>Alexandre Merlin - Portfolio</title>
+	</head>
+	<body>
+		<Header />
+		<main class="main">
+			<Home />
+			<About />
+			<Skills />
+			<Service />
+			<Projects />
+			<Contact />
+			<Footer />
+			      <!--========== SCROLL UP ==========-->
+				  <a href="#" class="scrollup" id="scroll-up">
+					<i class="ri-arrow-up-line"></i>
+				 </a>
+		   
+				 <!--=============== SCROLLREVEAL ===============-->
+				 <script src="/assets/js/scrollreveal.min.js"is:inline></script>
+		   
+				 <!--=============== EMAIL JS ===============-->
+				 <script
+					src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"is:inline>
+				 </script>
+		   
+				 <!--=============== MAIN JS ===============-->
+				 <script src="/assets/js/main.js"is:inline></script>
+		</main>
+	</body>
+</html>
